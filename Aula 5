@@ -1,0 +1,67 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+char cadastro;
+float preco;
+int payday;
+cout << "Insira codigo de usuario.\nDigite S para usuario cadastrado e N para nao
+cadastrado.\n" << endl;
+cin >> cadastro;
+cout << "Solicite o valor da sua venda\n";
+cin >> preco;
+cout << "O valor eh " << preco << endl;
+if (cadastro == 'S' || cadastro == 's') {
+cout << "Voce eh cadastrado\n"
+<< "Voce tem acesso ao frete gratis e paga apenas: "
+<< preco << endl;
+cout << "\nQual a sua forma de pagamento?\n";
+cout << "1-pix 2-credito 3-debito 4-boleto\n";
+cin >> payday;
+if (payday == 1) {
+cout << "Sua forma de pagamento eh o pix.";
+}
+else if (payday == 2) {
+cout << "Sua forma de pagamento eh o credito.";
+}
+else if (payday == 3) {
+cout << "Sua forma de pagamento eh o debito.";
+}
+else if (payday == 4) {
+cout << "Sua forma de pagamento eh o boleto.";
+}
+else {
+cout << "Forma de pagamento invalida.";
+}
+}
+
+else if (cadastro == 'N' || cadastro == 'n') {
+preco = preco + 9.90;
+cout << "Voce nao eh cadastrado\n"
+<< "Voce deve pagar uma taxa de 9.90 pelo frete, resultando em: "
+<< preco << endl;
+cout << "\nQual a sua forma de pagamento?\n";
+cout << "1-pix 2-credito 3-debito 4-boleto\n";
+cin >> payday;
+if (payday == 1) {
+cout << "Sua forma de pagamento eh o pix.";
+}
+else if (payday == 2) {
+cout << "Sua forma de pagamento eh o credito.";
+}
+else if (payday == 3) {
+cout << "Sua forma de pagamento eh o debito.";
+}
+else if (payday == 4) {
+cout << "Sua forma de pagamento eh o boleto.";
+}
+else {
+cout << "Forma de pagamento invalida.";
+}
+}
+else {
+cout << "Codigo invalido\n";
+}
+
+return 0;
+}
