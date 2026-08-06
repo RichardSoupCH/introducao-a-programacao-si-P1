@@ -1,0 +1,48 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+float nota1, nota2, media;
+for (int i = 1; i <= 10; i++)
+{
+do
+{
+cout << "Digite a primeira nota do aluno " << i << ": ";
+cin >> nota1;
+if (nota1 == 50)
+{
+cout << "Programa encerrado." << endl;
+return 0;
+}
+if (nota1 == 99)
+{
+cout << "Programa encerrado." << endl;
+return 0;
+}
+if (nota1 < 0 || nota1 > 50)
+cout << "Nota invalida!" << endl;
+} while (nota1 < 0 || nota1 > 50);
+do
+{
+cout << "Digite a segunda nota do aluno " << i << ": ";
+cin >> nota2;
+if (nota2 == 50)
+{
+cout << "Programa encerrado." << endl;
+return 0;
+}
+if (nota2 == 99)
+{
+cout << "Programa encerrado." << endl;
+
+return 0;
+}
+if (nota2 < 0 || nota2 > 50)
+cout << "Nota invalida!" << endl;
+} while (nota2 < 0 || nota2 > 50);
+media = (nota1 + nota2) / 2;
+cout << "Media do aluno " << i << ": " << media << endl;
+cout << endl;
+}
+return 0;
+}
