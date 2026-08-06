@@ -1,56 +1,88 @@
-// Primeiro programa
-#include <iostream> //biblioteca de dados 
-using namespace std; //uso do standart automatico
-#define PRECO 12.90 //define o valor da variavel preco como 1.99
+loop=repetição
+
+// O03/06/2026 aula 3 
+#include <iostream>
+using namespace std;
 
 int main() {
-        
-        int pera = 3;
-        char qualidade = 'A';
-        float peso = 3.2;
-        
-        cout << "Existem " << pera << " Peras \nde qualidade " << qualidade
-            << "\nPesando " << peso << " quilos." << endl;
-        cout << "O preço por quilo eh R$ " << PRECO
-            << "\no total eh R$ " << peso * PRECO << endl;
+    int a, b;
+    
+    cout <<"Entre com uma fracao (numerador e denominador): ";
+    cin >> a >> b;
+    
+    if (b != 0) {
+    } cout << "A fracao em decimal eh " << 1.0 *a / b << endl;
     return 0;
 }
 
-
-// Segundo Programa
-#include <iostream> //biblioteca de dados 
-using namespace std; //uso do standart automatico
-
+// O03/06/2026 aula 3 
+#include <iostream>
+using namespace std;
 
 int main() {
-        
-        float idade;
-        
-        cout << "Entre sua idade: ";
-        cin >> idade;
-        cout << "Voce tem " << idade << " anos." << 
-            endl;
-        
+    int a, b;
+
+    cout << "Entre com uma fracao (numerador e denominador): ";
+    cin >> a >> b;
+
+    if (b == 0) {
+        cout << "Erro! Nao existe divisao por zero!" << endl;
+    }
+    else {
+        cout << "A fracao em decimal eh " << 1.0 * a / b << endl;
+    }
+
     return 0;
 }
 
-// Terceiro programa
-#include <iostream> //biblioteca de dados 
-using namespace std; //uso do standart automatico
+// 03/06/2026 aula 3
+#include <iostream>
+using namespace std;
 
 int main() {
-        
-        int pera = 3;
-        char qualidade = 'A';
-        float peso = 3.2, PRECO;
-        
-        cout << "Existem " << pera << " Peras \nde qualidade " << qualidade
-            << "\nPesando " << peso << " quilos." << endl;
-            
-            cout<<"Digite o preco do produto\n";
-            cin>>PRECO;
-            
-        cout << "O preço por quilo eh R$ " << PRECO
-            << "\no total eh R$ " << peso * PRECO << endl;
+    int num;
+
+    // obtem um numero do usuario
+    cout << "Digite um numero inteiro: ";
+    cin >> num;
+
+    // imprime uma mensagem dizendo se o numero e par ou impar
+    if (num % 2 == 0)
+        cout << "O numero eh par.\n";
+    else {
+        cout << "O numero eh impar.\n";
+    }
+
+    return 0;
+}
+
+// 03/06/2026 aula 3
+#include <iostream>
+using namespace std;
+
+int main() {
+    int lado1, lado2, lado3;
+    int s1, s2, s3;
+
+    cout << "entre com o tamanho dos lados do triangulo: ";
+    cin >> lado1 >> lado2 >> lado3;
+
+    // calcula o quadrado dos lados
+    s1 = lado1 * lado1;
+    s2 = lado2 * lado2;
+    s3 = lado3 * lado3;
+    // testa a condicao para um triangulo reto
+    if (lado1 > 0 && lado2 > 0 && lado3 > 0) {
+        if (s1 == s2 + s3 || s2 == s1 + s3 || s3 == s1 + s2) {
+            cout << "Triangulo reto!";
+        }
+        else {
+            cout << "Nao e um triangulo reto!";
+        }
+    }
+    else {
+        cout << "Nao pode ser um triangulo";
+    }
+
     return 0;
 }
