@@ -1,0 +1,56 @@
+// Primeiro programa
+#include <iostream> //biblioteca de dados 
+using namespace std; //uso do standart automatico
+#define PRECO 12.90 //define o valor da variavel preco como 1.99
+
+int main() {
+        
+        int pera = 3;
+        char qualidade = 'A';
+        float peso = 3.2;
+        
+        cout << "Existem " << pera << " Peras \nde qualidade " << qualidade
+            << "\nPesando " << peso << " quilos." << endl;
+        cout << "O preço por quilo eh R$ " << PRECO
+            << "\no total eh R$ " << peso * PRECO << endl;
+    return 0;
+}
+
+
+// Segundo Programa
+#include <iostream> //biblioteca de dados 
+using namespace std; //uso do standart automatico
+
+
+int main() {
+        
+        float idade;
+        
+        cout << "Entre sua idade: ";
+        cin >> idade;
+        cout << "Voce tem " << idade << " anos." << 
+            endl;
+        
+    return 0;
+}
+
+// Terceiro programa
+#include <iostream> //biblioteca de dados 
+using namespace std; //uso do standart automatico
+
+int main() {
+        
+        int pera = 3;
+        char qualidade = 'A';
+        float peso = 3.2, PRECO;
+        
+        cout << "Existem " << pera << " Peras \nde qualidade " << qualidade
+            << "\nPesando " << peso << " quilos." << endl;
+            
+            cout<<"Digite o preco do produto\n";
+            cin>>PRECO;
+            
+        cout << "O preço por quilo eh R$ " << PRECO
+            << "\no total eh R$ " << peso * PRECO << endl;
+    return 0;
+}
