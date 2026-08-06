@@ -1,0 +1,79 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int opcao;
+
+    cout << "===== MENU =====\n";
+    cout << "1 - Conversao Celsius para Fahrenheit\n";
+    cout << "2 - Contador (while)\n";
+    cout << "3 - Contador (for)\n";
+    cout << "Escolha uma opcao: ";
+    cin >> opcao;
+
+    switch (opcao)
+    {
+    case 1:
+    {
+        float C = 1;
+
+        while (C <= 10)
+        {
+            cout << "C = " << C
+                 << " | F = " << (C * 9.0 / 5.0) + 32 << endl;
+            C++;
+        }
+        break;
+    }
+
+    case 2:
+    {
+        int inicio, passo, fim;
+
+        cout << "Digite o inicio do seu contador: ";
+        cin >> inicio;
+
+        cout << "Digite de quanto em quanto voce deseja contar: ";
+        cin >> passo;
+
+        cout << "Digite ate onde voce quer contar: ";
+        cin >> fim;
+
+        int i = inicio;
+
+        while (i <= fim)
+        {
+            cout << "Contagem = " << i << endl;
+            i += passo;
+        }
+        break;
+    }
+
+    case 3:
+    {
+        int inicio, passo, fim;
+
+        cout << "Digite o inicio do seu contador: ";
+        cin >> inicio;
+
+        cout << "Digite de quanto em quanto voce deseja contar: ";
+        cin >> passo;
+
+        cout << "Digite ate onde voce quer contar: ";
+        cin >> fim;
+
+        for (int i = inicio; i <= fim; i += passo)
+        {
+            cout << "Contagem = " << i << endl;
+        }
+        break;
+    }
+
+    default:
+        cout << "Opcao invalida!" << endl;
+    }
+
+    return 0;
+}
