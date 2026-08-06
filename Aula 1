@@ -1,0 +1,34 @@
+// Richard Venuto 27/05/2026
+
+#include <iostream> //voltada para entrada e saída de dados
+#include <stdio.h> //padrão
+#include <math.h> //incluir biblioteca de matemática
+using namespace std;
+
+int main() {
+    // Write C++ code here
+    cout << " \nLorem ipsum dolor sit amet,\n consectetur adipiscing elit.\n Phasellus sed ante ac eros euismod faucibus.\n Quisque mi quam, lobortis vitae est non,\n pretium elementum urna.  ";
+
+    return 0;
+}
+
+// Online C++ compiler to run C++ program online
+// Richard Venuto 27/05/2026
+
+#include <iostream> //voltada para entrada e saída de dados
+#include <stdio.h> //padrão
+#include <math.h> //incluir biblioteca de matemática
+using namespace std;
+
+int main() {
+    
+    // programa composto
+    int i; //cria uma variavel
+    i = 3; //atribui um valor a variavel
+    
+    cout << i << endl; //imprime a variavel
+    i++; //incrementa uma unidade a variavel 
+    cout << i << endl; //imprime a variavel
+
+    return 0;
+}
