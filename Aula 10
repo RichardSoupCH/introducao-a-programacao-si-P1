@@ -1,0 +1,58 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+int a1;
+int a2;
+int a3;
+int resultado;
+do {
+cout << "Escreva o primeiro valor: " << endl;
+cin >> a1;
+cout << "Escreva o segundo valor: " << endl;
+cin >> a2;
+cout << "Escreva o terceiro valor: " << endl;
+cin >> a3;
+resultado = a1 + a2 + a3;
+if (resultado > 180) {
+cout << "Valor ultrapassa" << endl;
+}
+} while (resultado > 180);
+if (a1 == 90 || a2 == 90 || a3 == 90) {
+cout << "Triangulo Retangulo";
+}
+else if (a1 > 90 || a2 > 90 || a3 > 90) {
+cout << "Triangulo Obtusangulo";
+}
+else {
+cout << "Triangulo Acutangulo";
+}
+return 0;
+}
+
+#include <iostream>
+using namespace std;
+int main()
+{
+
+char genero;
+float altura;
+float peso;
+do {
+cout << "Digite seu genero." << endl;
+cout << "F para Feminino e M para Masculino" << endl;
+cin >> genero;
+} while (genero != 'M' && genero != 'm' && genero != 'F' && genero != 'f');
+do {
+cout << "Digite sua altura: " << endl;
+cin >> altura;
+} while (altura <= 0);
+if (genero == 'M' || genero == 'm') {
+peso = (72.7 * altura) - 58;
+}
+else if (genero == 'F' || genero == 'f') {
+peso = (62.1 * altura) - 44.7;
+}
+cout << "Seu peso ideal e: " << peso << " kg" << endl;
+return 0;
+}
