@@ -1,0 +1,41 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int v1;
+    int v2;
+    int v3;
+    do{
+    cout << "Escreva o primeiro valor: " << endl;
+    cin >> v1;
+
+    cout << "Escreva o segundo valor: " << endl;
+    cin >> v2;
+
+    cout << "Escreva o terceiro valor: " << endl;
+    cin >> v3;
+    if (v1 == v2 || v1 == v3 || v2 == v3){
+        cout << "Entrada com numeros iguais." << endl;
+    }
+    } while (v1 == v2 || v1 == v3 || v2 == v3);
+
+    if (v1 < v2 && v1 < v3 && v2 < v3){
+        cout << v1 << v2 << v3;
+    }
+    else if (v1 < v3 && v1 < v2 && v3 < v2) {
+        cout << v1 << v3 << v2;
+    }
+    else if (v2 < v1 && v1 < v3) {
+        cout << v2 << v1 << v3;
+    }
+    else if (v2 < v3 && v3 < v1) {
+        cout << v2 << v1 << v3;
+    }
+    else if (v3 < v2 && v2 < v1) {
+        cout << v3 << v2 << v1;
+    }
+    else if (v3 < v1 && v1 < v2) {
+        cout << v3 << v1 << v2;
+    }
+    return 0;
+}
